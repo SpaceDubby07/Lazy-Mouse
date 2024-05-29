@@ -6,19 +6,22 @@ const { mouse } = require('@nut-tree-fork/nut-js');
 let mousePosition = robot.getMousePos();
 let current = mouse.getPosition();
 let scrollInterval = null;
+const totalScreenWidth = 1920 + 1920; // Two horizontal monitors
+const totalScreenHeight = 1080; // Height of the vertically oriented monitor
 
 io.on('connection', (socket) => {
   console.log('A user connected');
+
   socket.on('mousemove', ({ dx, dy }) => {
     const screenSize = robot.getScreenSize();
     robot.setMouseDelay(0);
     mousePosition.x = Math.min(
-      Math.max(mousePosition.x + dx, 0),
-      screenSize.width - 1
+      Math.max(mousePosition.x + dx, -1920),
+      totalScreenWidth - 1
     );
     mousePosition.y = Math.min(
       Math.max(mousePosition.y + dy, 0),
-      screenSize.height - 1
+      totalScreenHeight - 1
     );
     robot.moveMouse(mousePosition.x, mousePosition.y);
   });
