@@ -1,8 +1,10 @@
 ### This app - used with either an iPhone or Android device connects to an api hosted on a users machine. It is not published on any store so in my case i run it locally since its really just for a local machine
 ### ***[Expo Go](https://expo.dev/go) is required to run this locally, unless you plan on building the app yourself and ejecting.***
 
-I created this app because i read a lot of webtoons/manga/manwha/manhua on my computer and got sick of endlessly having to use my scroll wheel on my mouse.
-With this app i can control my mouse to an extend in a more confortable position in my chair and hold a button to scroll instead of swiping my mouse wheel. 
+### I created this app because i read a lot of webtoons/manga/manwha/manhua on my computer and got sick of endlessly having to use my scroll wheel on my mouse.
+### With this app i can control my mouse to an extend in a more confortable position in my chair and hold a button to scroll instead of swiping my mouse wheel. 
+
+***Feel free to fork this and use it however you wan't, i use [robotjs](https://robotjs.io/), and [nutjs](https://nutjs.dev/) since both have some functionality i prefer over the other
 
 ### To use the app locally just pull it to a folder of your choosing or download the zip, and run npm install in the main folder, and again in the api folder to install packages.
 ### to run, npm start in both the main folder, and api folder. You will know if it's running correctly if it says a user is connected in the logs.
