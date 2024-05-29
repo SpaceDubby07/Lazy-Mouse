@@ -1,0 +1,19 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "This api allows you to connect an expo application and control the mouse, select a screen and use basic mouse functionality like left/right click, and scroll up/down",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nut-tree-fork/nut-js": "^4.2.1",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "robotjs": "^0.6.0",
+    "socket.io": "^4.7.5"
+  }
+}
